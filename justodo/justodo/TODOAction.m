@@ -94,7 +94,7 @@ NSString *const kTagCompleted = @"completed";
     }
 
     if (TODOCompletionNone != self.completed) {
-        [result appendFormat:@" %@=\"%@\"/>", kTagCompleted, TODOCompletionDone == self.completed ? @"YES" : @"NO"];
+        [result appendFormat:@" %@=\"%@\"", kTagCompleted, TODOCompletionDone == self.completed ? @"YES" : @"NO"];
     }
 
     [result appendString:@"/>"];

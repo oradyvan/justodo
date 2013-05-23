@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface TODOActionTests : SenTestCase
+@interface TODOActionTests : SenTestCase <NSXMLParserDelegate>
 
 @end
