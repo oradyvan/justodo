@@ -31,6 +31,9 @@
 		DC5486E6174DEC0F00360574 /* NSStringUUIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486E5174DEC0F00360574 /* NSStringUUIDTests.m */; };
 		DC5486F4174DEEDD00360574 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486F3174DEEDD00360574 /* NSString+UUID.m */; };
 		DC5486F5174DEEDD00360574 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486F3174DEEDD00360574 /* NSString+UUID.m */; };
+		DC5486F9174DF41500360574 /* NSArray+RandomText.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486F8174DF41500360574 /* NSArray+RandomText.m */; };
+		DC5486FA174DF41500360574 /* NSArray+RandomText.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486F8174DF41500360574 /* NSArray+RandomText.m */; };
+		DC5486FD174DFB9600360574 /* NSArrayRandomTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486FC174DFB9600360574 /* NSArrayRandomTextTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,10 @@
 		DC5486E5174DEC0F00360574 /* NSStringUUIDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringUUIDTests.m; sourceTree = "<group>"; };
 		DC5486F2174DEEDD00360574 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
 		DC5486F3174DEEDD00360574 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
+		DC5486F7174DF41500360574 /* NSArray+RandomText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RandomText.h"; sourceTree = "<group>"; };
+		DC5486F8174DF41500360574 /* NSArray+RandomText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RandomText.m"; sourceTree = "<group>"; };
+		DC5486FB174DFB9600360574 /* NSArrayRandomTextTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayRandomTextTests.h; sourceTree = "<group>"; };
+		DC5486FC174DFB9600360574 /* NSArrayRandomTextTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayRandomTextTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,9 +171,11 @@
 		DC5486DE174DEC0F00360574 /* justodoTests */ = {
 			isa = PBXGroup;
 			children = (
+				DC5486DF174DEC0F00360574 /* Supporting Files */,
 				DC5486E4174DEC0F00360574 /* NSStringUUIDTests.h */,
 				DC5486E5174DEC0F00360574 /* NSStringUUIDTests.m */,
-				DC5486DF174DEC0F00360574 /* Supporting Files */,
+				DC5486FB174DFB9600360574 /* NSArrayRandomTextTests.h */,
+				DC5486FC174DFB9600360574 /* NSArrayRandomTextTests.m */,
 			);
 			path = justodoTests;
 			sourceTree = "<group>";
@@ -214,6 +223,8 @@
 			children = (
 				DC5486F2174DEEDD00360574 /* NSString+UUID.h */,
 				DC5486F3174DEEDD00360574 /* NSString+UUID.m */,
+				DC5486F7174DF41500360574 /* NSArray+RandomText.h */,
+				DC5486F8174DF41500360574 /* NSArray+RandomText.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -336,6 +347,7 @@
 				DC5486C4174DEC0F00360574 /* MainViewController.m in Sources */,
 				DC5486C7174DEC0F00360574 /* FlipsideViewController.m in Sources */,
 				DC5486F4174DEEDD00360574 /* NSString+UUID.m in Sources */,
+				DC5486F9174DF41500360574 /* NSArray+RandomText.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +357,8 @@
 			files = (
 				DC5486E6174DEC0F00360574 /* NSStringUUIDTests.m in Sources */,
 				DC5486F5174DEEDD00360574 /* NSString+UUID.m in Sources */,
+				DC5486FA174DF41500360574 /* NSArray+RandomText.m in Sources */,
+				DC5486FD174DFB9600360574 /* NSArrayRandomTextTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
