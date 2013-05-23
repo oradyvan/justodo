@@ -134,14 +134,9 @@
 			children = (
 				DC5486B6174DEC0E00360574 /* AppDelegate.h */,
 				DC5486B7174DEC0F00360574 /* AppDelegate.m */,
-				DC5486C2174DEC0F00360574 /* MainViewController.h */,
-				DC5486C3174DEC0F00360574 /* MainViewController.m */,
-				DC5486C5174DEC0F00360574 /* FlipsideViewController.h */,
-				DC5486C6174DEC0F00360574 /* FlipsideViewController.m */,
-				DC5486C8174DEC0F00360574 /* MainViewController_iPhone.xib */,
-				DC5486CB174DEC0F00360574 /* MainViewController_iPad.xib */,
-				DC5486CE174DEC0F00360574 /* FlipsideViewController.xib */,
-				DC5486BF174DEC0F00360574 /* justodo.xcdatamodeld */,
+				DC5486EF174DECBA00360574 /* Controllers */,
+				DC5486F0174DECC400360574 /* Xibs */,
+				DC5486F1174DECCD00360574 /* Data Models */,
 				DC5486AE174DEC0E00360574 /* Supporting Files */,
 			);
 			path = justodo;
@@ -178,6 +173,35 @@
 				DC5486E1174DEC0F00360574 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC5486EF174DECBA00360574 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC5486C2174DEC0F00360574 /* MainViewController.h */,
+				DC5486C3174DEC0F00360574 /* MainViewController.m */,
+				DC5486C5174DEC0F00360574 /* FlipsideViewController.h */,
+				DC5486C6174DEC0F00360574 /* FlipsideViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DC5486F0174DECC400360574 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				DC5486C8174DEC0F00360574 /* MainViewController_iPhone.xib */,
+				DC5486CB174DEC0F00360574 /* MainViewController_iPad.xib */,
+				DC5486CE174DEC0F00360574 /* FlipsideViewController.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		DC5486F1174DECCD00360574 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC5486BF174DEC0F00360574 /* justodo.xcdatamodeld */,
+			);
+			name = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,7 +411,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -412,7 +436,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
