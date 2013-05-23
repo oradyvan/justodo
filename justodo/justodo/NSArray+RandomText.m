@@ -7,126 +7,27 @@
 //
 
 #import "NSArray+RandomText.h"
-
-NSString *const kVerbs[] = {
-    @"Package",
-    @"Contact",
-    @"Visit",
-    @"Rectify",
-    @"Propose",
-    @"Enter",
-    @"Eat",
-    @"Drink",
-    @"Buy",
-};
-NSUInteger const kVerbsCount = sizeof(kVerbs) / sizeof(kVerbs[0]);
-
-NSString *const kPreps[] = {
-    @"From",
-    @"To",
-    @"By",
-    @"At",
-    @"In",
-    @"With",
-    @"For"
-};
-NSUInteger const kPrepsCount = sizeof(kPreps) / sizeof(kPreps[0]);
-
-NSString *const kAdjectives[] = {
-    @"Better",
-    @"Wider",
-    @"Greater",
-    @"Deeper",
-    @"Stronger",
-    @"Longer",
-    @"Louder",
-    @"Farther",
-    @"More"
-};
-NSUInteger const kAdjectivesCount = sizeof(kAdjectives) / sizeof(kAdjectives[0]);
-
-NSString *const kNouns[] = {
-    @"Creahoof",
-    @"Soostev",
-    @"Swopom",
-    @"Grodsaar",
-    @"Bumooxa",
-    @"Safome",
-    @"Burder",
-    @"Olielle",
-    @"Chillpal",
-    @"Modgone",
-    @"Sooprno",
-    @"Johackle",
-    @"Cazoova",
-    @"Unelind",
-    @"Gorealm",
-    @"Digisol",
-    @"Luwest",
-    @"Roinad",
-    @"Sorson",
-    @"Bumola",
-    @"Tomash",
-    @"Pruvia",
-    @"Wazzasoft",
-    @"Ploosnar",
-    @"Minivivi",
-    @"Looplab",
-    @"Grynn",
-    @"Peloozoid",
-    @"Sassee",
-    @"Vallume",
-    @"Boaconic",
-    @"Voov",
-    @"Nedril",
-    @"Jovaphile",
-    @"Swoquix",
-    @"Glowl",
-    @"Tribepop",
-    @"Goocrux",
-    @"Modeflick",
-    @"Neoskizzle",
-    @"Bopster",
-    @"Locobot",
-    @"Goulbap",
-    @"Yokovich",
-    @"Hioffpo",
-    @"Momoweb",
-    @"Ethosien",
-    @"Mogotrevo"
-};
-NSUInteger const kNounsCount = sizeof(kNouns) / sizeof(kNouns[0]);
-
+#import "NSString+RandomText.h"
 
 @implementation NSArray (RandomText)
+
++ (void)initialize {
+    if (self == [NSArray class]) {
+        // seeding random numbers generator
+        srandom((unsigned int)[NSDate timeIntervalSinceReferenceDate]);
+    }
+}
 
 + (NSArray *)generateRandomTextStringsWithCount:(NSUInteger)numberOfStrings {
     // create array of string composed in format of:
     // <verb> <noun> <preposition> <adjective> <noun>
 
-    // initializing storage array and seeding random numbers generator
+    // initializing storage array
     NSMutableArray *result = [NSMutableArray arrayWithCapacity:numberOfStrings];
-    srandom((unsigned int)[NSDate timeIntervalSinceReferenceDate]);
 
     for (NSUInteger i = 0; i < numberOfStrings; i++) {
-        // obtaining random indexes and appropriate words
-        NSUInteger index = (NSUInteger)((double)random() / LONG_MAX * kVerbsCount);
-        NSString *randVerb = [kVerbs[index] capitalizedString];
-
-        index = (NSUInteger)((double)random() / LONG_MAX * kNounsCount);
-        NSString *randNoun1 = [kNouns[index] lowercaseString];
-
-        index = (NSUInteger)((double)random() / LONG_MAX * kPrepsCount);
-        NSString *randPrep = [kPreps[index] lowercaseString];
-
-        index = (NSUInteger)((double)random() / LONG_MAX * kAdjectivesCount);
-        NSString *randAdjective = [kAdjectives[index] lowercaseString];
-
-        index = (NSUInteger)((double)random() / LONG_MAX * kNounsCount);
-        NSString *randNoun2 = [kNouns[index] lowercaseString];
-
         // building sentence with all the random words
-        NSString *sentence = [NSString stringWithFormat:@"%@ %@ %@ %@ %@", randVerb, randNoun1, randPrep, randAdjective, randNoun2];
+        NSString *sentence = [NSString randomTextString];
 
         // adding it to the resulting array
         [result addObject:sentence];

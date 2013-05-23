@@ -34,6 +34,11 @@
 		DC5486F9174DF41500360574 /* NSArray+RandomText.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486F8174DF41500360574 /* NSArray+RandomText.m */; };
 		DC5486FA174DF41500360574 /* NSArray+RandomText.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486F8174DF41500360574 /* NSArray+RandomText.m */; };
 		DC5486FD174DFB9600360574 /* NSArrayRandomTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486FC174DFB9600360574 /* NSArrayRandomTextTests.m */; };
+		DC548700174E04B600360574 /* TODOAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486FF174E04B600360574 /* TODOAction.m */; };
+		DC548701174E04B600360574 /* TODOAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486FF174E04B600360574 /* TODOAction.m */; };
+		DC548705174E0C7600360574 /* TODOActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC548704174E0C7600360574 /* TODOActionTests.m */; };
+		DC548708174E0E7D00360574 /* NSString+RandomText.m in Sources */ = {isa = PBXBuildFile; fileRef = DC548707174E0E7D00360574 /* NSString+RandomText.m */; };
+		DC548709174E0E7D00360574 /* NSString+RandomText.m in Sources */ = {isa = PBXBuildFile; fileRef = DC548707174E0E7D00360574 /* NSString+RandomText.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,12 @@
 		DC5486F8174DF41500360574 /* NSArray+RandomText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RandomText.m"; sourceTree = "<group>"; };
 		DC5486FB174DFB9600360574 /* NSArrayRandomTextTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayRandomTextTests.h; sourceTree = "<group>"; };
 		DC5486FC174DFB9600360574 /* NSArrayRandomTextTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayRandomTextTests.m; sourceTree = "<group>"; };
+		DC5486FE174E04B600360574 /* TODOAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TODOAction.h; sourceTree = "<group>"; };
+		DC5486FF174E04B600360574 /* TODOAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TODOAction.m; sourceTree = "<group>"; };
+		DC548703174E0C7600360574 /* TODOActionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TODOActionTests.h; sourceTree = "<group>"; };
+		DC548704174E0C7600360574 /* TODOActionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TODOActionTests.m; sourceTree = "<group>"; };
+		DC548706174E0E7D00360574 /* NSString+RandomText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RandomText.h"; sourceTree = "<group>"; };
+		DC548707174E0E7D00360574 /* NSString+RandomText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RandomText.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +159,9 @@
 				DC5486EF174DECBA00360574 /* Controllers */,
 				DC5486F0174DECC400360574 /* Xibs */,
 				DC5486F1174DECCD00360574 /* Data Models */,
-				DC5486AE174DEC0E00360574 /* Supporting Files */,
+				DC548702174E04C400360574 /* Models */,
 				DC5486F6174DEEEA00360574 /* Helpers */,
+				DC5486AE174DEC0E00360574 /* Supporting Files */,
 			);
 			path = justodo;
 			sourceTree = "<group>";
@@ -176,6 +188,8 @@
 				DC5486E5174DEC0F00360574 /* NSStringUUIDTests.m */,
 				DC5486FB174DFB9600360574 /* NSArrayRandomTextTests.h */,
 				DC5486FC174DFB9600360574 /* NSArrayRandomTextTests.m */,
+				DC548703174E0C7600360574 /* TODOActionTests.h */,
+				DC548704174E0C7600360574 /* TODOActionTests.m */,
 			);
 			path = justodoTests;
 			sourceTree = "<group>";
@@ -223,10 +237,21 @@
 			children = (
 				DC5486F2174DEEDD00360574 /* NSString+UUID.h */,
 				DC5486F3174DEEDD00360574 /* NSString+UUID.m */,
+				DC548706174E0E7D00360574 /* NSString+RandomText.h */,
+				DC548707174E0E7D00360574 /* NSString+RandomText.m */,
 				DC5486F7174DF41500360574 /* NSArray+RandomText.h */,
 				DC5486F8174DF41500360574 /* NSArray+RandomText.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DC548702174E04C400360574 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC5486FE174E04B600360574 /* TODOAction.h */,
+				DC5486FF174E04B600360574 /* TODOAction.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +373,8 @@
 				DC5486C7174DEC0F00360574 /* FlipsideViewController.m in Sources */,
 				DC5486F4174DEEDD00360574 /* NSString+UUID.m in Sources */,
 				DC5486F9174DF41500360574 /* NSArray+RandomText.m in Sources */,
+				DC548700174E04B600360574 /* TODOAction.m in Sources */,
+				DC548708174E0E7D00360574 /* NSString+RandomText.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +386,9 @@
 				DC5486F5174DEEDD00360574 /* NSString+UUID.m in Sources */,
 				DC5486FA174DF41500360574 /* NSArray+RandomText.m in Sources */,
 				DC5486FD174DFB9600360574 /* NSArrayRandomTextTests.m in Sources */,
+				DC548701174E04B600360574 /* TODOAction.m in Sources */,
+				DC548705174E0C7600360574 /* TODOActionTests.m in Sources */,
+				DC548709174E0E7D00360574 /* NSString+RandomText.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
