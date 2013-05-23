@@ -28,7 +28,9 @@
 		DC5486DA174DEC0F00360574 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5486A7174DEC0E00360574 /* Foundation.framework */; };
 		DC5486DB174DEC0F00360574 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5486AB174DEC0E00360574 /* CoreData.framework */; };
 		DC5486E3174DEC0F00360574 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC5486E1174DEC0F00360574 /* InfoPlist.strings */; };
-		DC5486E6174DEC0F00360574 /* justodoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486E5174DEC0F00360574 /* justodoTests.m */; };
+		DC5486E6174DEC0F00360574 /* NSStringUUIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486E5174DEC0F00360574 /* NSStringUUIDTests.m */; };
+		DC5486F4174DEEDD00360574 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486F3174DEEDD00360574 /* NSString+UUID.m */; };
+		DC5486F5174DEEDD00360574 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5486F3174DEEDD00360574 /* NSString+UUID.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +70,10 @@
 		DC5486D7174DEC0F00360574 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DC5486E0174DEC0F00360574 /* justodoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "justodoTests-Info.plist"; sourceTree = "<group>"; };
 		DC5486E2174DEC0F00360574 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DC5486E4174DEC0F00360574 /* justodoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = justodoTests.h; sourceTree = "<group>"; };
-		DC5486E5174DEC0F00360574 /* justodoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = justodoTests.m; sourceTree = "<group>"; };
+		DC5486E4174DEC0F00360574 /* NSStringUUIDTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStringUUIDTests.h; sourceTree = "<group>"; };
+		DC5486E5174DEC0F00360574 /* NSStringUUIDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringUUIDTests.m; sourceTree = "<group>"; };
+		DC5486F2174DEEDD00360574 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		DC5486F3174DEEDD00360574 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 				DC5486F0174DECC400360574 /* Xibs */,
 				DC5486F1174DECCD00360574 /* Data Models */,
 				DC5486AE174DEC0E00360574 /* Supporting Files */,
+				DC5486F6174DEEEA00360574 /* Helpers */,
 			);
 			path = justodo;
 			sourceTree = "<group>";
@@ -159,8 +164,8 @@
 		DC5486DE174DEC0F00360574 /* justodoTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC5486E4174DEC0F00360574 /* justodoTests.h */,
-				DC5486E5174DEC0F00360574 /* justodoTests.m */,
+				DC5486E4174DEC0F00360574 /* NSStringUUIDTests.h */,
+				DC5486E5174DEC0F00360574 /* NSStringUUIDTests.m */,
 				DC5486DF174DEC0F00360574 /* Supporting Files */,
 			);
 			path = justodoTests;
@@ -202,6 +207,15 @@
 				DC5486BF174DEC0F00360574 /* justodo.xcdatamodeld */,
 			);
 			name = "Data Models";
+			sourceTree = "<group>";
+		};
+		DC5486F6174DEEEA00360574 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DC5486F2174DEEDD00360574 /* NSString+UUID.h */,
+				DC5486F3174DEEDD00360574 /* NSString+UUID.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +335,7 @@
 				DC5486C1174DEC0F00360574 /* justodo.xcdatamodeld in Sources */,
 				DC5486C4174DEC0F00360574 /* MainViewController.m in Sources */,
 				DC5486C7174DEC0F00360574 /* FlipsideViewController.m in Sources */,
+				DC5486F4174DEEDD00360574 /* NSString+UUID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +343,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC5486E6174DEC0F00360574 /* justodoTests.m in Sources */,
+				DC5486E6174DEC0F00360574 /* NSStringUUIDTests.m in Sources */,
+				DC5486F5174DEEDD00360574 /* NSString+UUID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

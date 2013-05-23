@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface justodoTests : SenTestCase
+@interface NSStringUUIDTests : SenTestCase
 
 @end
