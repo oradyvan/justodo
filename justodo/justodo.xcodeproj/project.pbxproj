@@ -40,6 +40,9 @@
 		DC548708174E0E7D00360574 /* NSString+RandomText.m in Sources */ = {isa = PBXBuildFile; fileRef = DC548707174E0E7D00360574 /* NSString+RandomText.m */; };
 		DC548709174E0E7D00360574 /* NSString+RandomText.m in Sources */ = {isa = PBXBuildFile; fileRef = DC548707174E0E7D00360574 /* NSString+RandomText.m */; };
 		DC54870C174E260A00360574 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = DC54870B174E260A00360574 /* blank.png */; };
+		DC548710174E2BDF00360574 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC54870D174E2BDF00360574 /* icon.png */; };
+		DC548711174E2BDF00360574 /* icon-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = DC54870E174E2BDF00360574 /* icon-ipad.png */; };
+		DC548712174E2BDF00360574 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC54870F174E2BDF00360574 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,9 @@
 		DC548706174E0E7D00360574 /* NSString+RandomText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RandomText.h"; sourceTree = "<group>"; };
 		DC548707174E0E7D00360574 /* NSString+RandomText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RandomText.m"; sourceTree = "<group>"; };
 		DC54870B174E260A00360574 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		DC54870D174E2BDF00360574 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DC54870E174E2BDF00360574 /* icon-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ipad.png"; sourceTree = "<group>"; };
+		DC54870F174E2BDF00360574 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +266,9 @@
 		DC54870A174E260A00360574 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				DC54870D174E2BDF00360574 /* icon.png */,
+				DC54870E174E2BDF00360574 /* icon-ipad.png */,
+				DC54870F174E2BDF00360574 /* icon@2x.png */,
 				DC54870B174E260A00360574 /* blank.png */,
 			);
 			name = images;
@@ -345,6 +354,9 @@
 				DC5486CD174DEC0F00360574 /* MainViewController_iPad.xib in Resources */,
 				DC5486D0174DEC0F00360574 /* FlipsideViewController.xib in Resources */,
 				DC54870C174E260A00360574 /* blank.png in Resources */,
+				DC548710174E2BDF00360574 /* icon.png in Resources */,
+				DC548711174E2BDF00360574 /* icon-ipad.png in Resources */,
+				DC548712174E2BDF00360574 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
